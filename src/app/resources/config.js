@@ -5,13 +5,13 @@ const routes = {
   "/about": true,
   "/work": true,
   "/blog": true,
-  "/gallery": true,
+  "/gallery": false,
 };
 
 // Enable password protection on selected routes
 // Set password in pages/api/authenticate.ts
 const protectedRoutes = {
-  "/work/automate-design-handovers-with-a-figma-to-code-pipeline": true,
+  "/work/automate-design-handovers-with-a-figma-to-code-pipeline": false,
 };
 
 const style = {
@@ -68,7 +68,7 @@ const display = {
 };
 
 const mailchimp = {
-  action: "https://url/subscribe/post?parameters",
+  action: "https://gmail.us11.list-manage.com/subscribe/post?u=1e494378fd03965a45269fc1b&amp;id=e0b83898a9&amp;f_id=00d1bae0f0",
   effects: {
     mask: {
       cursor: false,
