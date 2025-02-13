@@ -1,95 +1,96 @@
-**Hello there!**  
+**Hello there!**
 
-If you're reading this, chances are you've stumbled upon my portfolio code on GitHub. I'm glad that you find my work useful, and I'm happy to share it with you and the wider community.  
+If you're reading this, chances are you've stumbled upon my portfolio code on GitHub. I'm glad that you find my work useful, and I'm happy to share it with you and the wider community.
 
-However, I kindly request that if you use any part of my code or take inspiration from it for your own project, please mention the original source (https://github.com/once-ui-system/magic-portfolio) in your project and give credit where credit is due.  
+However, I kindly request that if you use any part of my code or take inspiration from it for your own project, please mention the original source (https://github.com/once-ui-system/magic-portfolio) in your project and give credit where credit is due.
 
-I understand how important it is to respect other people's intellectual property and give proper attribution for their work. By mentioning the original project, you not only show appreciation for my efforts, but you also help others discover my work and potentially benefit from it as well.  
+As a developer, I understand how important it is to respect other people's intellectual property and give proper attribution for their work. By mentioning the original project, you not only show appreciation for my efforts, but you also help others discover my work and potentially benefit from it as well.
 
-So please, when you use my portfolio code, include a reference to the original project and let others know where you found it. I would greatly appreciate it.  
+So please, when you use my portfolio code, include a reference to the original project and let others know where you found it. I would greatly appreciate it.
 
-Thank you for your understanding and happy coding!  
+Thank you for your understanding and happy coding!
 
 ---
 
-This is a [Next.js](https://nextjs.org/) project built with [Once UI](https://once-ui.com).  
+This is a [Next.js](https://nextjs.org/) project built with [Once UI](https://once-ui.com).
 
-# Deploy the portfolio  
+# Deploy the portfolio
 
-## With Vercel  
+## With Docker
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&project-name=portfolio&repository-name=portfolio&redirect-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&demo-title=Magic%20Portfolio&demo-description=Showcase%20your%20designers%20or%20developer%20portfolio&demo-url=https%3A%2F%2Fdemo.magic-portfolio.com&demo-image=%2F%2Fraw.githubusercontent.com%2Fonce-ui-system%2Fmagic-portfolio%2Fmain%2Fpublic%2Fimages%2Fcover.png)  
+```shell
+docker run -d --name portfolio -p 3000:3000 once-ui/magic-portfolio:latest
+```
 
-## Without Docker  
+## Without Docker
 
-1. Install the dependencies:  
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/once-ui-system/magic-portfolio.git
+    ```
 
+2. Install the dependencies:
     ```bash
     npm install
-    ```  
+    ```
 
-2. Run the development server:  
-
+3. Run the development server:
     ```bash
     npm run dev
-    ```  
+    ```
 
-3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.  
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-4. Edit the configuration and content as needed:  
+# Features
 
-    - **Edit config:** `src/app/resources/config`  
-    - **Edit content:** `src/app/resources/content`  
-    - **Create blog posts/projects:** Add a new `.mdx` file to `src/app/blog/posts` or `src/app/work/projects`  
+## **Once UI**
+- All tokens, components & features of [Once UI](https://once-ui.com)
 
-# Features  
+## **SEO**
+- Automatic open-graph and X image generation with next/og
+- Automatic schema and metadata generation based on the content file
 
-## Once UI  
-- All tokens, components & features of [Once UI](https://once-ui.com)  
+## **Design**
+- Responsive layout optimized for all screen sizes
+- Timeless design without heavy animations and motion
+- Endless customization options through [data attributes](https://once-ui.com/docs/theming)
 
-## SEO  
-- Automatic open-graph and X image generation with `next/og`  
-- Automatic schema and metadata generation based on content files  
+## **Content**
+- Render sections conditionally based on the content file
+- Enable or disable pages for blog, work, gallery, and about/CV
+- Generate and display social links automatically
+- Set up password protection for URLs
 
-## Design  
-- Responsive layout optimized for all screen sizes  
-- Minimalist design without heavy animations  
-- Customization through [data attributes](https://once-ui.com/docs/theming)  
+## **Localization**
+- A localized version of Magic Portfolio is available with the next-intl library
+- To use localization, switch to the 'i18n' branch
 
-## Content  
-- Conditional rendering of sections based on content  
-- Enable/disable pages for blog, work, gallery, and about/CV  
-- Auto-generated social links  
-- URL password protection  
+# Development
 
-## Localization  
-- Multilingual support via `next-intl` (switch to `i18n` branch)  
+1. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-# Learn More  
+2. Run the development server:
+    ```bash
+    npm run dev
+    ```
 
-To learn more about Next.js and Once UI, check out:  
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- [Next.js Documentation](https://nextjs.org/docs)  
-- [Learn Next.js](https://nextjs.org/learn)  
-- [Once UI Documentation](https://once-ui.com)  
+4. You can start editing the page by modifying `src/app/resources/config` and `src/app/resources/content`. The page auto-updates as you edit the files.
+
+# Authors
+
+Connect with us on Threads or LinkedIn.
+
+Lorant Toth: [Threads](https://www.threads.net/@lorant.one), [LinkedIn](https://www.linkedin.com/in/tothlorant/)  
+Zsofia Komaromi: [Threads](https://www.threads.net/@zsofia_kom), [LinkedIn](https://www.linkedin.com/in/zsofiakomaromi/)
+
+Localization added by [François Hernandez](https://github.com/francoishernandez)
 
 ---
 
-**Authors**  
+*Inspired by [Once UI's Magic Portfolio](https://github.com/once-ui-system/magic-portfolio)*
 
-- Lorant Toth: [Threads](https://www.threads.net/@lorant.one), [LinkedIn](https://www.linkedin.com/in/tothlorant/)  
-- Zsofia Komaromi: [Threads](https://www.threads.net/@zsofia_kom), [LinkedIn](https://www.linkedin.com/in/zsofiakomaromi/)  
-- Localization: [François Hernandez](https://github.com/francoishernandez)  
-
-# Get Involved  
-
-- Join the [Design Engineers Club on Discord](https://discord.com/invite/5EyAQ4eNdS)  
-- Report a [bug](https://github.com/once-ui-system/magic-portfolio/issues/new?labels=bug&template=bug_report.md)  
-
-# License  
-
-Distributed under the CC BY-NC 4.0 License.  
-- Commercial usage is not allowed.  
-- Attribution is required.  
-
-See `LICENSE.txt` for details.  
