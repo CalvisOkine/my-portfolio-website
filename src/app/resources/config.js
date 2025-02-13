@@ -1,4 +1,4 @@
-const baseURL = "demo.magic-portfolio.com";
+const baseURL = "https://calvis-portfolio-website.vercel.app/";
 
 const routes = {
   "/": true,
@@ -68,7 +68,7 @@ const display = {
 };
 
 const mailchimp = {
-  action: "https://gmail.us11.list-manage.com/subscribe/post?u=1e494378fd03965a45269fc1b&amp;id=e0b83898a9&amp;f_id=00d1bae0f0",
+  action: "https://37fd839f.sibforms.com/serve/MUIFAOG1eMQpgVAU8owkZSEWZJk3g36U_Hv9sgXa9hiyY-0FnUzNe6kzPDv3cY81xz3pnDz99TyC65CEVQeU8DuG7XPzz1givfucAF9tZNJb9mWfZqznQ2B7IHtGj0cb33hM8swbObcbiN1QQFfcwpqH4qpVH8UFF8dmkQILNvbOgiCHF3oztx7VYqz-OnGXuuTN25MzlhZ2El_b",
   effects: {
     mask: {
       cursor: false,
