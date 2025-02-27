@@ -1,0 +1,75 @@
+---
+title: "Building a Virtual Security Lab: An Active Directory and Cyber Defense Project"
+publishedAt: "2025-02-27"
+summary: "A comprehensive guide to setting up a virtual lab environment for practicing Active Directory configurations, security monitoring, and simulated cyber attacks."
+images:
+  - "/images/projects/project-01/cover-02.jpg"
+team:
+  - name: "Calvis Okine"
+    role: "Cybersecurity Enthusiast"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/calvisokine/"
+link: "https://github.com/CalvisOkine/Active-Directory-Project"
+---
+
+## Overview
+
+Embarking on the journey of building a virtual security lab has been an enlightening experience. Inspired by the myDFIR YouTube course, this project involved creating an enterprise-like network environment using Oracle VM VirtualBox. The lab setup facilitated hands-on practice in various cybersecurity domains, including network configuration, Active Directory management, endpoint monitoring, and executing simulated attacks.
+
+## Lab Environment Components
+
+The virtual lab environment comprised the following systems:
+
+- **Windows 10 Client**: Emulated a standard business workstation.
+- **Kali Linux Attacker**: Served as a penetration testing platform for conducting simulated attacks.
+- **Windows Server 2022**: Functioned as the Active Directory Domain Controller (AD DC), offering centralized authentication and directory services.
+- **Ubuntu Server**: Acted as the Splunk log analysis server and the primary security monitoring station.
+
+## Key Security Solutions Implemented
+
+### **Splunk Enterprise & Universal Forwarder**
+
+- **Purpose**: Aggregation, analysis, and visualization of logs from various systems within the network.
+- **Implementation**: Installed Splunk Enterprise on the Ubuntu Server and deployed Universal Forwarders on Windows machines to collect and forward logs for centralized analysis.
+
+### **Sysmon (System Monitor)**
+
+- **Purpose**: Provided detailed tracking of endpoint activities on Windows systems, including process creations, network connections, and file modifications.
+- **Implementation**: Installed Sysmon on Windows machines with a customized configuration to capture relevant security events, enhancing the visibility of system activities.
+
+### **Crowbar**
+
+- **Purpose**: Simulated brute force attacks to test the robustness of system defenses.
+- **Implementation**: Utilized Crowbar on the Kali Linux machine to perform password guessing attacks against various services, aiding in assessing the strength of authentication mechanisms.
+
+### **Atomic Red Team (ART)**
+
+- **Purpose**: Offered a library of tests to simulate a wide range of attack techniques.
+- **Implementation**: Executed ART test cases within the lab environment to evaluate the effectiveness of detection and response strategies, thereby identifying potential security gaps.
+
+## Challenges and Learnings
+
+Throughout the project, several challenges were encountered, leading to valuable insights:
+
+- **System Compatibility Issues**: Ensuring seamless communication between different operating systems required meticulous network configuration and troubleshooting.
+- **Resource Allocation**: Balancing system resources among multiple virtual machines was crucial to maintain optimal performance.
+- **Security Tool Integration**: Integrating various security tools necessitated a deep understanding of their configurations and interoperability.
+
+These challenges underscored the importance of a methodical approach to system setup and the need for continuous learning in the ever-evolving field of cybersecurity.
+
+## Outcome
+
+The successful deployment of this virtual lab environment provided a robust platform for:
+
+- **Hands-On Practice**: Enabled practical application of theoretical knowledge in a controlled setting.
+- **Skill Enhancement**: Improved proficiency in Active Directory management, security monitoring, and attack simulation.
+- **Preparation for Real-World Scenarios**: Equipped with the experience to handle complex security challenges in actual enterprise environments.
+
+## Further Learning Resources
+
+- **myDFIR YouTube Course**: [Active Directory & Security Lab](https://www.youtube.com/watch?v=85-bp7XxWDQ&list=PLEgclf_4HA-i1viJp70XzMT64H7AXmFtl)
+- **Splunk Documentation**: [Getting Started with Splunk](https://docs.splunk.com/Documentation/Splunk/latest/SearchTutorial/WelcometotheSearchTutorial)
+- **Sysmon Configuration Guide**: [SwiftOnSecurity Sysmon Config](https://github.com/SwiftOnSecurity/sysmon-config)
+- **Atomic Red Team Repository**: [ART GitHub](https://github.com/redcanaryco/atomic-red-team)
+
+For a detailed walkthrough and access to the project files, visit my [GitHub repository](https://github.com/CalvisOkine/Active-Directory-Project).
