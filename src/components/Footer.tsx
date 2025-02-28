@@ -27,7 +27,7 @@ export const Footer = () => {
           <Text onBackground="neutral-weak">© {currentYear} /</Text>
           <Text paddingX="4">Powered by</Text>
           <Text onBackground="brand-weak" variant="display-strong-xl" paddingX="2">GRACE </Text>
-          <Text style={{ marginLeft: "10.125rem" }} onBackground="neutral-weak" variant="body-default-s">
+          <Text onBackground="neutral-weak" variant="body-default-s">
             {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
                 Build with{" "}
             <SmartLink 
