@@ -29,7 +29,7 @@ export const Footer = () => {
           <Text onBackground="brand-weak" variant="display-strong-xl" paddingX="2">GRACE </Text>
           <Text style={{ marginLeft: "10.125rem" }} onBackground="neutral-weak" variant="body-default-s">
             {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
-                Build your portfolio with{" "}
+                Build with{" "}
             <SmartLink 
               style={{ marginLeft: "-0.125rem" }}
               href="https://once-ui.com/templates/magic-portfolio"
